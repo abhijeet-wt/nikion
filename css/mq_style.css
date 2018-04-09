@@ -1,0 +1,31 @@
+
+body { margin: 20px; }
+
+.marquee {
+  height: 25px;
+  width: 420px;
+
+  overflow: hidden;
+  position: center;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: center;
+  overflow: hidden;
+
+  animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+  float: right;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { right: 0; }
+  100% { right: 100%; }
+}

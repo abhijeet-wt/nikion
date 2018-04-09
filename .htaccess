@@ -1,0 +1,14 @@
+ErrorDocument 404 http://nikoin.com/404
+ErrorDocument 500 http://nikoin.com/500
+
+RewriteEngine on 
+
+RewriteRule ^(./)$ index.html
+RewriteRule ^(launch)$ launch.html
+RewriteRule ^(NFP)$ NFP.html
+RewriteRule ^(SEP)$ SEP.html
+RewriteRule ^(timeline)$ timeline.html
+RewriteRule ^(404)$ error404.html
+RewriteRule ^(500)$ error500.html
+RewriteRule ^(whitepaper)$ docs/whitepaper.pdf
+
